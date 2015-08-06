@@ -1,13 +1,11 @@
 <table border="1">
 
 <?php for($i=1; $i<=10; $i++)
-      { ?>
-      <tr>
+      { 
+        ?>
+      <tr <?php if($i%2==0) echo "style=\"background-color: lightgrey\""; else echo "style=\"background-color:grey\"";?>>
         <?php 
         for($j=1; $j<=10; $j++){
-          if($j%2!=0){
-            echo "<style type=\"text/css\"> background-color: grey </style>";
-          }
         ?>
          <td><?php
 
